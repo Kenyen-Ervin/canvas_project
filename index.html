@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="250" style="border: 1px solid black;"></canvas>
+
+<script>
+    window.onload = function(){
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    
+let context0 = new Path2D();
+context0.moveTo(250,0);
+context0.lineTo(250,75);
+context0.lineTo(100,0);
+context0.lineTo(250,0);
+context0.closePath();
+ctx.fillStyle = 'blue';
+ctx.fill(context0, 'evenodd');
+
+let context1 = new Path2D();
+context1.moveTo(250,250);
+context1.lineTo(250,175);
+context1.lineTo(100,250);
+context1.lineTo(250,250);
+context1.closePath();
+ctx.fillStyle = 'blue';
+ctx.fill(context1, 'evenodd');
+
+let context2 = new Path2D();
+context2.moveTo(350,250);
+context2.lineTo(350,175);
+context2.lineTo(500,250)
+context2.lineTo(350,250)
+context2.closePath();
+ctx.fillStyle = 'blue';
+ctx.fill(context2, 'evenodd');
+
+let context3 = new Path2D();
+context3.moveTo(350,0);
+context3.lineTo(350,75);
+context3.lineTo(500,0)
+context3.lineTo(350,0)
+context3.closePath();
+ctx.fillStyle = 'blue';
+ctx.fill(context3, 'evenodd');
+
+let context4 = new Path2D();
+context4.moveTo(0,20);
+context4.lineTo(0,90);
+context4.lineTo(125,90)
+context4.lineTo(0,20)
+context4.closePath();
+ctx.fillStyle = 'blue';
+ctx.fill(context4, 'evenodd');
+
+let context5 = new Path2D();
+context5.moveTo(0,220);
+context5.lineTo(125,160);
+context5.lineTo(0,160)
+context5.lineTo(0,220)
+context5.closePath();
+ctx.fillStyle = 'blue';
+ctx.fill(context5, 'evenodd');
+
+let context6 = new Path2D();
+context6.moveTo(600,220);
+context6.lineTo(475,160);
+context6.lineTo(600,160)
+context6.lineTo(600,220)
+context6.closePath();
+ctx.fillStyle = 'blue';
+ctx.fill(context6, 'evenodd');
+
+let context7 = new Path2D();
+context7.moveTo(600,30);
+context7.lineTo(475,90);
+context7.lineTo(600,90)
+context7.lineTo(600,30)
+context7.closePath();
+ctx.fillStyle = 'blue';
+ctx.fill(context7, 'evenodd');
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+ctx.fillStyle = "red"
+ctx.strokeStyle = "red"
+ctx.fillRect(0,100,600,50)
+
+ctx.fillStyle = "red"
+ctx.strokeStyle = "red"
+ctx.fillRect(270,0,60,250)
+
+    }
+</script>
+
+
+</body>
+</html>
